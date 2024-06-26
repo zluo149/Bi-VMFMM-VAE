@@ -109,7 +109,7 @@ def main():
     # =============================================================== #
     print('init vMF mixture prior...')
     datas, labels = i_dataloader.dataset.data, i_dataloader.dataset.targets
-    if dataset_name in ['cifar10', 'ytf', 'gtsrb']:
+    if dataset_name in ['ytf', 'gtsrb']:
         datas = datas.permute((0, 3, 1, 2)).to(DEVICE) / 255.0
     else:
         datas = datas.unsqueeze(1).to(DEVICE) / 255.0
