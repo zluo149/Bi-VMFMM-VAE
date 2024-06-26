@@ -262,13 +262,13 @@ def main():
 
             logger = open(os.path.join(log_path, "log.txt"), 'a')
             logger.write(
-                "[FSVAE]: epoch: {}, g_loss: {:.4f}, acc: {:.4f}%, nmi: {:.4f}, t_acc: {:.4f}%, t_nmi: {:.4f}\n".format
+                "[VAE-vMFMM]: epoch: {}, g_loss: {:.4f}, acc: {:.4f}%, nmi: {:.4f}, t_acc: {:.4f}%, t_nmi: {:.4f}\n".format
                 (
                     epoch, g_t_loss / len(dataloader), _acc, _nmi, t_acc, t_nmi
                 )
             )
             logger.close()
-            print("[FSVAE]: epoch: {}, g_loss: {:.4f}, acc: {:.4f}%, nmi: {:.4f}, t_acc: {:.4f}%, t_nmi: {:.4f}".format
+            print("[VAE-vMFMM]: epoch: {}, g_loss: {:.4f}, acc: {:.4f}%, nmi: {:.4f}, t_acc: {:.4f}%, t_nmi: {:.4f}".format
                   (
                 epoch, g_t_loss / len(dataloader), _acc, _nmi, t_acc, t_nmi
             ))
