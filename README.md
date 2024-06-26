@@ -19,7 +19,7 @@ conda activate Test
 To train the method(s) in the paper, run this command:  
 
     __params:__  
-    -r   # name of runing folder, default is fsvae  
+    -r   # name of runing folder, default is dsvae  
     -n   # training epoch, default is 500  
     -o   # ratios of outlier, default is 0
     -s   # data set name, default is mnist  
