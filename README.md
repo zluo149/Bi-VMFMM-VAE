@@ -26,5 +26,5 @@ To train the method(s) in the paper, run this command:
     -v   # version of training, default is v1  
 
 ```train
-python train.py -s mnist -n 500 -v v1 -r fsvae -o 0
+python train.py -s mnist -n 500 -v v1 -r dsvae -o 0
 ```
